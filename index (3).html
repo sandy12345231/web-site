@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=monts">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://kit.fontawesome.com/180b299cc2.js" crossorigin="anonymous"></script>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product!</title>
+</head>
+<script>
+
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function mySearch() {
+  var y = document.getElementById("mobile-search-input");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "block";
+  }
+}
+
+</script>    
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- searh  bar -->   
+<div class="container">
+<nav class="navbar fixed-top navbar-light bg-light" >
+  <div class="col-md-3"> 
+  <form class="form-inline">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+            <i class="fas fa-search"></i>
+        </span>
+      </div>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search.."></div></form></div>
+
+
+
+      <div class="mobile-nav-left-hamburger">
+        <a  href="#" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+       
+
+    <a class="auto-localize" id="center-logo" href="#">
+<img src="images/header-logo.png"></a>
+
+
+
+<!-- Modal -->
+    <div class="col-md-6"> 
+   <div class="navbar-text">
+        <a href="#" data-toggle="modal" data-target="#signinPage">Login</a> |
+        <a href="#"data-toggle="modal" data-target="#signupPage">Register</a>
+     </div>
+    </div>
+
+
+
+<div class="mobile-nav-right-search">
+<a href="#" id="open-mobile-search" onclick="mySearch()">
+<i class="fa fa-search"></i></a>
+</div>
+</nav>
+</div>
+
+<div class="ent-search-overlay" id="mobile-search-input" style="display: none;">
+  <div class="mobile-search-box open">
+  <form action="#">
+<input type="text"  autocomplete="off">
+<input type="Submit">
+</form>
+</div> 
+</div> 
+
+
+<div class="mobile-nav-dropdown" id="mobile-menu">
+        <div class="mobile-nav-heading ng-scope">
+        <a href="#">
+          <h3 class="ng-bind">Gift For Men</h3>
+          <i class="fa fa-chevron-down fonts"></i></a>
+          <div class="mobile-nav-blue-border"></div>
+          <a href="#">
+          <h3 class="ng-bind">Gifts For Women</h3>
+          <i class="fa fa-chevron-down fonts"></i></a>
+          <div class="mobile-nav-blue-border"></div>
+          <a href="#">
+          <h3 class="ng-bind">Gifts Guide</h3>
+          <i class="fa fa-chevron-down fonts"></i></a>
+          <div class="mobile-nav-blue-border"></div>
+          <a href="#">
+          <h3 class="ng-bind">Personalized Gifts</h3>
+          <i class="fa fa-chevron-down fonts"></i></a>
+          <div class="mobile-nav-blue-border"></div>
+          <a href="#">
+          <h3 class="ng-bind">Geeky Stuff</h3>
+          <i class="fa fa-chevron-down fonts"></i></a>
+          <div class="mobile-nav-blue-border"></div>
+          <a href="#">
+          <h3 class="ng-bind">Categories</h3>
+          <i class="fa fa-chevron-down fonts"></i></a>
+          <div class="mobile-nav-blue-border"></div>
+          <a href="#">
+          <h3 class="mobile-nav-whats-new">WHAT'S NEW</h3>
+          </a>
+          <div class="hidden-xs hidden-sm">
+       <nav class="mobile-nav-bottom-area">
+            <div class="mobile-nav-account-item">
+              <a href="#"  data-toggle="modal" data-target="#signinPage">
+                <i class="fa fa-user"></i>Login</a>
+              </div>
+               <div class="mobile-nav-account-item">
+              <a href="#" data-toggle="modal" data-target="#signupPage">
+                <i class="fa fa-user"></i>Create Account</a>
+              </div>
+               <div class="mobile-nav-account-item">
+              <a href="#">
+                <i class="fa fa-info-circle"></i>Contact Us</a>
+              </div>
+           </nav>
+      </div>
+      </div>
+      </div>
+
+      
+      <div class="modal fade" id="signinPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true"> <!-- style="display: block;padding-right: 16px;"> -->
+  <div class="modal-dialog" style="max-width: 450px !important;">
+     <div class="modal-content" style="padding: 15%">
+       
+       <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <img class="small-logo-login" src="images/header-logo.png"  data-insta_upload_ext_elem="1">
+           <h4 class="modal-title text-center w-100 font-weight-bold" style="    margin-left: -90%;">Log in to see more</h4>
+         
+       </div>
+                        <form>
+                            <div class="form-group text-center">
+                                <input type="email" class="form-control" placeholder="Email Address" required autofocus>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="password" class="form-control" placeholder="Enter Password" required
+                                    autofocus>
+                            </div>
+                           
+                            <div>
+                                <button class="btn btn-primary btn-lg btn-block text-center">
+                                    LOG IN
+                                </button>
+                            </div>
+                            <h4 class="or">Or</h4>
+                           <!--  <hr class="my-4"> -->
+                            <div>
+                                <button class="btn btn-lg btn-block google mb-3 text-center">
+                                    <span class="fa fa-google"></span> Sign in with Google
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-lg btn-block facebook text-center">
+                                    <span class="fa fa-facebook"></span> Sign in with Facebook
+                                </button>
+                            </div>
+                            <br>
+                            <a class="grey-link" href="#">Forgot my password
+                             </a> 
+                             <hr>
+                             <a class="grey-link" href="#">Not a member yet? Sign up
+                             </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+ 
+ <!-- register -->
+            <div class="modal fade" id="signupPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true"> <!-- style="display: block;padding-right: 16px;"> -->
+  <div class="modal-dialog" style="max-width: 450px !important;">
+     <div class="modal-content" style="padding: 15%">
+       
+       <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <img class="small-logo-login" src="images/header-logo.png"  data-insta_upload_ext_elem="1">
+           <h4 class="modal-title text-center w-100 font-weight-bold" style="    margin-left: -90%;">Join Us!</h4>
+         
+       </div>
+                        <form>
+                            <div class="form-group text-center">
+                                <input type="email" class="form-control" placeholder="Email Address" required autofocus>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="password" class="form-control" placeholder="Enter Password" required
+                                    autofocus>
+                            </div>
+                           
+                          
+                            <div>
+                                <button class="btn btn-primary btn-lg btn-block text-center">
+                                    CREATE ACCOUNT
+                                </button>
+                            </div>
+                            <h4 class="or">Or</h4>
+                           <!--  <hr class="my-4"> -->
+                            <div>
+                                <button class="btn btn-lg btn-block google mb-3 text-center">
+                                    <span class="fa fa-google"></span> Sign in with Google
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-lg btn-block facebook text-center">
+                                    <span class="fa fa-facebook"></span> Sign in with Facebook
+                                </button>
+                            </div>
+                            <br>
+                            <p style="color: rgb(170, 170, 170); font-size: 11px">"By signing up you agree to our "
+                             <a class="grey-link-tos" href="#" style="text-decoration: underline">Terms and Policies</a>
+                           </p>
+                           <a class="grey-link">Already a member? Log in
+                             </a>
+
+                             <!-- <hr>
+                             <a class="grey-link" href="#">Not a member yet? Sign up
+                             </a> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+  
+
+
+
+
+<div id="nav-container">
+  
+  <div class="nav-accent nav-accent-left" ng-hide="hide_header">
+  <div class="navbar bar">
+ <div class="btn-group btn-group-lg click">
+
+  <a href="#" class="btn btn-what">
+    <span class="icons">
+      <i class="fas fa-home"></i>
+    </span><br>
+  <span class="font">What's New</span></a>
+  <a href="#" class="btn btn-men ">
+    <span class="icons">
+      <i class="fas fa-male"></i>
+    </span><br>
+  <span class="font">Gift For Men</span></a>  
+  <a href="#" class="btn btn-women">
+    <span class="icons">
+      <i class="fas fa-female"></i>
+    </span><br>
+  <span class="font">Gift For Women</span></a>
+  <a href="#" class="btn btn-gift">
+    <span class="icons">
+      <i class="fas fa-gift"></i>
+    </span><br>
+  <span class="font">Gifts Guide</span></a>
+  <a href="#" class="btn btn-personalized">
+    <span class="icons">
+     <i class="far fa-smile"></i>
+    </span><br>
+  <span class="font">Personalized Gifts</span></a>
+  <a href="#" class="btn btn-stuff">
+    <span class="icons">
+      <i class="fas fa-desktop"></i>
+    </span><br>
+  <span class="font">Geeky Stuff</span></a>
+
+  <a href="#" class="btn btn-categories dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">
+    <span class="icons">
+      <i class="fas fa-bars"></i>
+    </span><br>
+  <span class="font">Categories</span></a>
+    <ul class="dropdown-menu desktop-nav-entry" role="menu" aria-labelledby="menu1">
+      <a href="#">
+      <h3 class="ng-binding">Gifts By Recipient</h3>
+      <i class="fa fa-chevron-down"></i>
+      <h3 class="ng-binding">Gifts By Occasion</h3>
+      <i class="fa fa-chevron-down"></i>
+      <h3 class="ng-binding">Gifts By Category</h3>
+      <i class="fa fa-chevron-down"></i>
+     
+
+       <li ><a class="menuitem"  href="#">Gift of Recipent</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Occassion </a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Fathar's</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Co-Workers</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Kid's</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Parent's</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Valentine's</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Gamer's</a></li>
+      <li ><a class="menuitem" tabindex="-1" href="#">Gift of Food's</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<div class="nav-accent nav-accent-right" ng-hide="hide_header">
+ </div>
+</nav>
+</div>
+<div class="container">
+  <div class="row blog">
+    <div class="col-md-2">
+    <a href="#">
+      <img src="images/man.jpg" class="image-fluid blogcontent">
+      <div class="bg-title-container">
+        <div class="bg-title">
+          <a href="#" class="color">
+          <p>35 Work From Home Essentials You Need</p></a>
+        </div>
+        </div>
+        </a>
+        </div>
+
+    <div class="col-md-2">
+      <a href="#">
+      <img src="images/home.jpg" class="image-fluid blogsc">
+      <div class="bg-ti-container">
+        <div class="bg-title">
+          <a href="#" class="color">
+          <p>35 Work From Home Essentials You Need</p></a>
+        </div>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="#">
+      <img src="images/ballon.jpg" class="image-fluid blogscon">
+      <div class="bg-titles-container">
+        <div class="bg-title">
+          <a href="#" class="color">
+          <p>35 Work From Home Essentials You Need</p></a>
+        </div>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="#">
+      <img src="images/elephant.jpg" class="image-fluid blogscont">
+      <div class="bg-titl-container">
+        <div class="bg-title">
+          <a href="#" class="color">
+          <p>35 Work From Home Essentials You Need</p></a>
+        </div>
+        </div>
+        </a>
+    </div>
+
+
+    <div class="col-md-2">
+      <a href="#">
+      <img src="images/beer.jpg" class="image-fluid blogsconten">
+      <div class="bg-tit-container">
+        <div class="bg-title">
+          <a href="#" class="color">
+          <p>35 Work From Home Essentials You Need</p></a>
+        </div>
+        </div>
+        </a>
+    </div>
+      </div>
+      </div>
+
+<div class="filters ng-scope">
+        <ul class="menu">
+          <li class="selected">
+          <i class="fa fa-caret-down fa-white ng-scope"></i>
+          <a class="auto-localize" style="color: #ffffff" href="#">Newest</a>
+            </li>
+
+            <li>
+            <a class="auto-localize" href="#">Popular</a>
+        </li>
+
+         <li>
+            <a class="auto-localize" href="#">Price Range</a>
+        </li>
+         <li>
+            <a class="auto-localize gift" href="#">Gifts Under$20</a>
+        </li>
+         <li>
+            <a class="auto-localize random" href="#">Random</a>
+        </li></ul>
+
+      </div>
+          
+
+<div class="mobile-nav-stripe-container">
+<div class="mobile-nav-stripe" style="background-color: #ffb143"></div>
+<div class="mobile-nav-stripe" style="background-color: #f26c00"></div>
+<div class="mobile-nav-stripe" style="background-color: #1691be"></div>
+<div class="mobile-nav-stripe" style="background-color: #0e5d8f"></div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4 product-grid" class="w-100">
+        <div class="product-items">
+        <h3 class="head">
+       <b>Triton DeepView Submarine</b>
+          </h3>
+          <div class="image">
+            <a href="#">
+            <img src="images/gun.jpg" class="img">
+          <div class="overlay">
+              <div class="detail">SAVE</div>
+            </div>
+          </a>
+            </div>
+          </div>
+            
+          <div class="para">
+            <a href="#">
+            <p>Become the living embodiment of one of the Alliance’s most notable officers by dressing up in this Admiral Raddus uniform costume. This superbly made ensemble includes the jacket, pants, vest, belt, and brooch. Mask and gloves sold separatel</p></a>
+          </div>
+
+          <div class="button">
+            <a href="" class="btn buy">Check IT OUT</a>
+            </div>
+            <div class="price" >
+            <a href="#" ><h5>$985.99</h5></a>
+          </div>
+          <div class="saves-text">
+              <img src="images/heart-unsaved.png">
+              <a href="#" class="saved-count">29 saves
+              </a></div>
+          </div>
+        
+      <div class="col-md-4 product-grid-1" class="w-100">
+        <div class="product-items">
+        <h3 class="head">
+            <a href="#"> <b>Triton DeepView Submarine</b></a>
+          </h3>
+          <div class="image">
+            <a href="#">
+            <img src="images/gun.jpg" class="img">
+          <div class="overlay">
+              <div class="detail">SAVE</div>
+            </div>
+          </a>
+            </div>
+          </div>
+            
+          <div class="para">
+            <a href="#">
+            <p>Become the living embodiment of one of the Alliance’s most notable officers by dressing up in this Admiral Raddus uniform costume. This superbly made ensemble includes the jacket, pants, vest, belt, and brooch. Mask and gloves sold separatel</p></a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="btn buy">Check IT OUT</a>
+            </div>
+            <div class="price" >
+            <a href="#" ><h5>$985.99</h5></a>
+          </div>
+          <div class="saves-text">
+              <img src="images/heart-unsaved.png">
+              <a href="#" class="saved-count">29 saves
+              </a></div>
+          </div>
+      
+      <div class="col-md-4 product-grid" class="w-100">
+        <div class="product-items">
+        <h3 class="head">
+            <a href="#"> <b>Triton DeepView Submarine</b></a>
+          </h3>
+          <div class="image">
+            <a href="#">
+            <img src="images/gun.jpg" class="img">
+          <div class="overlay">
+              <div class="detail">SAVE</div>
+            </div>
+          </a>
+            </div>
+          </div>
+
+            
+          <div class="para">
+            <a href="#">
+            <p>Become the living embodiment of one of the Alliance’s most notable officers by dressing up in this Admiral Raddus uniform costume. This superbly made ensemble includes the jacket, pants, vest, belt, and brooch. Mask and gloves sold separatel</p></a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="btn buy">Check IT OUT</a>
+            </div>
+            <div class="price" >
+            <a href="#" ><h5>$985.99</h5></a>
+          </div>
+          <div class="saves-text">
+              <img src="images/heart-unsaved.png">
+              <a href="#" class="saved-count">29 saves
+              </a></div>
+          </div>
+       
+    
+        
+ 
+      <div class="col-md-4 product-grid-1" class="w-100">
+        <div class="product-items">
+        <h3 class="head">
+            <a href="#"> <b>Triton DeepView Submarine</b></a>
+          </h3>
+          <div class="image">
+            <a href="#">
+            <img src="images/gun.jpg" class="img">
+          <div class="overlay">
+              <div class="detail">SAVE</div>
+            </div>
+          </a>
+            </div>
+          </div>
+            
+          <div class="para">
+            <a href="#">
+            <p>Become the living embodiment of one of the Alliance’s most notable officers by dressing up in this Admiral Raddus uniform costume. This superbly made ensemble includes the jacket, pants, vest, belt, and brooch. Mask and gloves sold separatel</p></a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="btn buy">Check IT OUT</a>
+            </div>
+            <div class="price" >
+            <a href="#" ><h5>$985.99</h5></a>
+          </div>
+          <div class="saves-text">
+              <img src="images/heart-unsaved.png">
+              <a href="#" class="saved-count">29 saves
+              </a></div>
+          </div>
+        
+      <div class="col-md-4 product-grid" class="w-100">
+        <div class="product-items">
+        <h3 class="head">
+            <a href="#"> <b>Triton DeepView Submarine</b></a>
+          </h3>
+          <div class="image">
+            <a href="#">
+            <img src="images/gun.jpg" class="img">
+          <div class="overlay">
+              <div class="detail">SAVE</div>
+            </div>
+          </a>
+            </div>
+          </div>
+            
+          <div class="para">
+            <a href="#">
+            <p>Become the living embodiment of one of the Alliance’s most notable officers by dressing up in this Admiral Raddus uniform costume. This superbly made ensemble includes the jacket, pants, vest, belt, and brooch. Mask and gloves sold separatel</p></a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="btn buy">Check IT OUT</a>
+            </div>
+            <div class="price" >
+            <a href="#" ><h5>$985.99</h5></a>
+          </div>
+          <div class="saves-text">
+              <img src="images/heart-unsaved.png">
+              <a href="#" class="saved-count">29 saves
+              </a></div>
+          </div>
+      
+      <div class="col-md-4 product-grid-1" class="w-100">
+        <div class="product-items">
+        <h3 class="head">
+            <a href="#"> <b>Triton DeepView Submarine</b></a>
+          </h3>
+          <div class="image">
+            <a href="#">
+            <img src="images/gun.jpg" class="img">
+          <div class="overlay">
+              <div class="detail">SAVE</div>
+            </div>
+          </a>
+            </div>
+          </div>
+
+            
+          <div class="para">
+            <a href="#">
+            <p>Become the living embodiment of one of the Alliance’s most notable officers by dressing up in this Admiral Raddus uniform costume. This superbly made ensemble includes the jacket, pants, vest, belt, and brooch. Mask and gloves sold separatel</p></a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="btn buy">Check IT OUT</a>
+            </div>
+            <div class="price" >
+            <a href="#" ><h5>$985.99</h5></a>
+          </div>
+          <div class="saves-text">
+              <img src="images/heart-unsaved.png">
+              <a href="#" class="saved-count">29 saves </a></div>
+          </div>
+       
+      </div>
+    </div>
+    <footer>
+  <hr>
+  <nav class="container nav foot">
+
+    <div class="col-md-6 col-sm-6 col-xs-12 footer-left-col">
+      <img class="footer-logo" src="images/cash-in-hand-logo-small2.png" alt="This Is Why Im Broke logo" >
+      <h4 class="text">THIS IS WHY IM BROKE</h4>
+      <p class="ng-binding">© 2020 ThisIsWhyImBroke. All rights reserved.</p>
+    </div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="footer-social-icons">
+    <i class="fab fa-facebook-f"></i>
+    <a href="#facebook"></a>
+   <i class="fab fa-twitter"></i>
+<a href="#"></a>
+<i class="fab fa-google-plus-g"></i>
+<a href="#"></a>
+<i class="fab fa-linkedin-in"></i>
+<a href="#"></a>
+<i class="fab fa-youtube"></i>
+<a href="#"></a>
+<i class="fab fa-pinterest-p"></i>
+<a href="#"></a>
+<i class="fab fa-instagram"></i>
+<a href="#"></a>
+</div>
+<div class="footer-more-link">
+<a href="#" rel="nofollow">Contact Us</a>
+<a href="#" rel="nofollow">Privacy Policy</a>
+<a href="#" rel="nofollow">Affiliate Disclosure</a>
+<a href="#" rel="nofollow">DMCA Policy</a>
+</div>
+</div>
+</nav>
+
+<div id="contact_support_button">
+  <a href="#" title="Contact Us">CONTACT US
+<img class="msg-icon" src="images/contact-msg.png">
+</a>
+</div>
+</footer>
+
+
+
+  
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--<script>
+function responsive_menu(){
+var e= document.getElementById('menu_small');
+if(e.className==='menu_list'){
+  e.className+="responsive";
+}else{
+  e.className ==='menu_list';
+
+}
+
+}
+
+
+</script>-->
+</body>
+</html>
